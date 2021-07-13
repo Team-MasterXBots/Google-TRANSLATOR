@@ -10,7 +10,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from googletrans import Translator
 
-FayasNoushad = Client(
+psycho = Client(
     "Translator Bot",
     bot_token = os.environ["BOT_TOKEN"],
     api_id = int(os.environ["API_ID"]),
@@ -72,7 +72,7 @@ TRANSLATE_BUTTON = InlineKeyboardMarkup(
     )
 DEFAULT_LANGUAGE = os.environ.get("DEFAULT_LANGUAGE", "en")
 
-@FayasNoushad.on_callback_query()
+@psycho.on_callback_query()
 async def cb_data(bot, update):
     if update.data == "home":
         await update.message.edit_text(
@@ -96,7 +96,7 @@ async def cb_data(bot, update):
         await update.message.delete()
     
 
-@FayasNoushad.on_message(filters.command(["start"]))
+@psycho.on_message(filters.command(["start"]))
 async def start(bot, update):
     text = START_TEXT.format(update.from_user.mention)
     reply_markup = START_BUTTONS
@@ -106,7 +106,7 @@ async def start(bot, update):
         reply_markup=reply_markup
     )
 
-@FayasNoushad.on_message((filters.private | filters.group | ~filters.channel) & filters.text)
+@psycho.on_message((filters.private | filters.group | ~filters.channel) & filters.text)
 async def translate(bot, update):
     if update.chat.type == "private":
         if " | " in update.text:
@@ -148,4 +148,4 @@ async def translate(bot, update):
         await message.edit_text("Something wrong. Contact @PsychoBots_chat")
         return
 
-FayasNoushad.run()
+psycho.run()
