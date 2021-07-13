@@ -30,11 +30,11 @@ example :- `This is a sample text | ml`
 Made by @Psycho_Bots
 """
 ABOUT_TEXT = """
-- **Bot :** `Translator Bot`
+- **Bot :** `G-Translator Bot`
 - **Channel :** [Psycho Bots](https://telegram.me/Psycho_Bots)
 - **Language :** [Python3](https://python.org)
-- **Library :** [Pyrogram](https://pyrogram.org)
-- **Server :** [Heroku](https://heroku.com)
+- **Support :** [PsychoBots_chat](https://t.me/PsychoBots_chat)
+
 """
 START_BUTTONS = InlineKeyboardMarkup(
         [[
