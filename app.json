@@ -1,0 +1,49 @@
+{
+
+    "name": "Google-TRANSLATOR.git",
+
+    "description": "Hello, I am Red Master An Intelligent Google Translation Bot. If You Are Feeling Lonely, You can Always Come to me and Translate Make With Me!",
+
+    "logo": "https://telegra.ph/file/09319242fbeab9f3e188a.jpg",
+
+    "repository": "https://github.com/Team-MasterXBots/Google-TRANSLATOR.git",
+
+    "env": {
+
+        "TOKEN": {
+
+            "description": "Get From @BotFather. Create Your Bot And Get Token. That Token Copy And Paste Here ",
+
+            "required": true
+
+        },
+
+        "API_ID": {
+
+            "description": "Get From @API_SCRAPPER_RoBot",
+
+            "required": true
+
+        },
+
+        "API_HASH": {
+
+            "description": "Get From @API_SCRAPPER_RoBot",
+
+            "required": true
+
+        }
+
+    },
+
+    "addons": [
+
+        {
+
+            "plan": "heroku-postgresql"
+
+        }
+
+    ]
+
+}
