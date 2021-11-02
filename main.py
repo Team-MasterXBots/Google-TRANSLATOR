@@ -1,5 +1,5 @@
 # Made with python3
-# (C) @Psycho_Bots
+# (C) @Master_X_Updates
 
 import os
 from io import BytesIO
@@ -16,18 +16,18 @@ psycho = Client(
 
 START_TEXT = """
 Hello {}, I am a google translator telegram bot.
-Made by @Psycho_Bots
+Made by @Master_X_Updates
 """
 HELP_TEXT = """
 - Just send a text with language code
 example :- `This is a sample text | ml`
-Made by @Psycho_Bots
+Made by @Master_X_Updates
 """
 ABOUT_TEXT = """
 - **Bot :** `G-Translator Bot`
-- **Channel :** [Psycho Bots](https://telegram.me/Psycho_Bots)
+- **Channel :** [Master X Bot's Updates](https://telegram.me/Master_X_Updates)
 - **Language :** [Python3](https://python.org)
-- **Support :** [PsychoBots_chat](https://t.me/PsychoBots_chat)
+- **Support :** [Best Friends](https://t.me/Best_Friends15)
 """
 START_BUTTONS = InlineKeyboardMarkup(
         [[
@@ -36,7 +36,7 @@ START_BUTTONS = InlineKeyboardMarkup(
         InlineKeyboardButton('Close', callback_data='close')
         ],
         [
-          InlineKeyboardButton('Language codes🔠', url='https://t.me/PsychoBots_chat/4785')
+          InlineKeyboardButton('Language codes🔠', url='https://telegra.ph/Ƭʜᴇ-Wøℓf--Verified-11-02')
         ]]
     )
 HELP_BUTTONS = InlineKeyboardMarkup(
@@ -46,13 +46,13 @@ HELP_BUTTONS = InlineKeyboardMarkup(
         InlineKeyboardButton('Close', callback_data='close')
         ],
         [
-          InlineKeyboardButton('Language codes🔠', url='https://t.me/PsychoBots_chat/4785')
+          InlineKeyboardButton('Language codes🔠', url='https://telegra.ph/Ƭʜᴇ-Wøℓf--Verified-11-02')
         ]]
     )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Channel', url='https://telegram.me/Psycho_Bots'),
-        InlineKeyboardButton('Feedback', url='https://telegram.me/PsychoBots_chat')
+        InlineKeyboardButton('Channel', url='https://telegram.me/Master_X_Updates'),
+        InlineKeyboardButton('Feedback', url='https://telegram.me/Best_Friends15')
         ],[
         InlineKeyboardButton('Home', callback_data='home'),
         InlineKeyboardButton('Help', callback_data='help'),
@@ -66,7 +66,7 @@ CLOSE_BUTTON = InlineKeyboardMarkup(
     )
 TRANSLATE_BUTTON = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('⚙ Join Updates Channel ⚙', url='https://telegram.me/Psycho_Bots')
+        InlineKeyboardButton('⚙ Join Updates Channel ⚙', url='https://telegram.me/Master_X_Updates')
         ]]
     )
 DEFAULT_LANGUAGE = os.environ.get("DEFAULT_LANGUAGE", "en")
@@ -126,7 +126,7 @@ async def translate(bot, update):
         translate = translator.translate(text, dest=language)
         translate_text = f"**Translated to {language}**"
         translate_text += f"\n\n{translate.text}"
-        translate_text += "\n\nMade by @Psycho_Bots"
+        translate_text += "\n\nMade by @Master_X_Updates"
         if len(translate_text) < 4096:
             await message.edit_text(
                 text=translate_text,
@@ -138,13 +138,13 @@ async def translate(bot, update):
                 translate_file.name = language + ".txt"
                 await update.reply_document(
                     document=translate_file,
-                    caption="Made by @Psycho_Bots",
+                    caption="Made by @Master_X_Updates",
                     reply_markup=TRANSLATE_BUTTON
                 )
                 await message.delete()
     except Exception as error:
         print(error)
-        await message.edit_text("Something wrong. Contact @PsychoBots_chat")
+        await message.edit_text("Something wrong. Contact @Best_Friends15")
         return
 
 psycho.run()
