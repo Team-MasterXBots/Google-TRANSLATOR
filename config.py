@@ -1,5 +1,6 @@
-ADD 
-API_ID - Telegram API_ID
-API_HASH - Telegram API_HASH
-BOT_TOKEN - Telegram Bot Token as a string 
+import os 
 
+class Config(object):
+   API_ID = int(os.environ.get("API_ID", 6)) 
+   API_HASH = os.environ.get("API_HASH", "") 
+   TOKEN = os.environ.get("TOKEN" "")
