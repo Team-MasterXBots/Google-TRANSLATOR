@@ -1,9 +1,9 @@
 # H! ✨ ![✨](https://telegra.ph/file/4ddbba57cfaacb477d098.jpg)
 ### This is GOOGLE TRANSLATOR BoT 
-#### THIS CAN BE FOUND IN TELEGRAM BY [Translation BOT](https://t.me/PsychoTranslateBot)
+#### THIS CAN BE FOUND IN TELEGRAM BY [Translation BOT](https://t.me/MasterXTranslatorBot)
 
 ## BOT AT TELEGRAM 
-<a href="https://telegram.me/PsychoTranslateBot" target="_blank"><img src="https://img.shields.io/badge/Translation -BoT-black.svg?style=for-the-badge&logo=Telegram"></a> 
+<a href="https://telegram.me/MasterXTranslatorBot" target="_blank"><img src="https://img.shields.io/badge/Translation -BoT-black.svg?style=for-the-badge&logo=Telegram"></a> 
 
 #### This bot can Translate into many languages....
 
