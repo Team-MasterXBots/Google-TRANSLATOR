@@ -36,7 +36,7 @@ START_BUTTONS = InlineKeyboardMarkup(
         InlineKeyboardButton('Close', callback_data='close')
         ],
         [
-          InlineKeyboardButton('Language codes🔠', url='https://telegra.ph/Ƭʜᴇ-Wøℓf--Verified-11-02')
+          InlineKeyboardButton('Language codes🔠', url='https://telegra.ph/Ƭʜᴇ-Wøℓf--Verified-11-03-2')
         ]]
     )
 HELP_BUTTONS = InlineKeyboardMarkup(
@@ -46,7 +46,7 @@ HELP_BUTTONS = InlineKeyboardMarkup(
         InlineKeyboardButton('Close', callback_data='close')
         ],
         [
-          InlineKeyboardButton('Language codes🔠', url='https://telegra.ph/Ƭʜᴇ-Wøℓf--Verified-11-02')
+          InlineKeyboardButton('Language codes🔠', url='https://telegra.ph/Ƭʜᴇ-Wøℓf--Verified-11-03-2')
         ]]
     )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
